@@ -1,7 +1,6 @@
 /*
     File: barchartanimate.h
     Code Implementer: Uvaish Bakaliya
-    Project 3(CS251): Animated Bar Chart (Fall 2022)
     Date: 10-12-2022
     Code written In: Visual Studio code(VSC)
     -----------------------------------------------
