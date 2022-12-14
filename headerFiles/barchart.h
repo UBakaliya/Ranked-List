@@ -22,7 +22,6 @@ const string BOX = "\u29C8";
 const string CLEARCONSOLE = "\033[2J";
 const string RESET("\033[0m");
 
-
 // Color codes for darker mode terminals
 const string CYAN("\033[1;36m");
 const string GREEN("\033[1;32m");
