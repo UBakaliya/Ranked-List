@@ -1,7 +1,6 @@
 /*
     File: barchart.h
     Code Implementer: Uvaish Bakaliya
-    Project 3(CS251): Animated Bar Chart (Fall 2022)
     Date: 10-12-2022
     Code written In: Visual Studio code(VSC)
     -----------------------------------------------
@@ -23,18 +22,6 @@ const string BOX = "\u29C8";
 const string CLEARCONSOLE = "\033[2J";
 const string RESET("\033[0m");
 
-//
-// NOTE: COMMENT AND UNCOMMENT AS NEEDED BASED ON YOUR TERMINAL
-//
-// Color codes for light mode terminals
-// const string RED("\033[1;36m");
-// const string PURPLE("\033[1;32m");
-// const string BLUE("\033[1;33m");
-// const string CYAN("\033[1;31m");
-// const string GREEN("\033[1;35m");
-// const string GOLD("\033[1;34m");
-// const string BLACK("\033[1;37m");
-// const vector<string> COLORS = {RED, PURPLE, BLUE, CYAN, GREEN, GOLD, BLACK};
 
 // Color codes for darker mode terminals
 const string CYAN("\033[1;36m");
