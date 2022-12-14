@@ -1,22 +1,7 @@
-/*
-	Code Implementer: Uvaish Bakaliya
-	Project 3(CS251): Animated Bar Chart (Fall 2022)
-	Date: 10-12-2022
-	Code written In: Visual Studio code(VSC)
-	---------------------------------
-		***Creative component***
-	---------------------------------
-	@details:
-	* Search for the frame in two files, and only animate both files if the frame is found in both.
-
-	* functions that are made for the creative component:
-	- readFile() in main.cpp
-	- takes the argument's file name into consideration.
-
-	- animateFoundedFarms() in barchartanimate.h
-	- Arguments the function takes are:
-	- similar to animate(), but with an additional frame for the frame that will be searched
-		(user would like to search)
+/**
+ *@file application.cpp
+ *@author: Uvaish Bakaliya
+ *@date: 10-12-2022
 */
 
 #include "headerFiles/barchartanimate.h"
@@ -46,9 +31,8 @@ BarChartAnimate readFile(string fileName)
 	else
 	{
 		while (!inFile.eof())
-		{
 			bca.addFrame(inFile);
-		}
+
 		inFile.close();
 	}
 	return bca;
@@ -72,9 +56,8 @@ int main()
 
 	// check if the file entered is valid:
 	if (inFile.fail())
-	{
 		cout << "Invalid File" << endl;
-	}
+
 	// if valid then:
 	else
 	{
@@ -86,40 +69,5 @@ int main()
 		// and how many frames
 		bca.animate(cout, 12, -1);
 	}
-
-	/*---------------------
-	Creative component implementations
-	---------------------*/
-	/*
-	string frameToSearch, fileName1, fileName2;
-	int range;
-	cout << "Enter the #1 File Name: ";
-	cin >> fileName1;
-	cout << "Enter the #2 File Name: ";
-	cin >> fileName2;
-	cout << "Processing Files ...." << endl;
-	cout << "\nEnter Frame To Search: ";
-	cin >> frameToSearch;
-	cout << "Range You want to display the Frames: ";
-	cin >> range;
-	cout << "Searching Frames ....\n" << endl;
-	BarChartAnimate bca1 = readFile(fileName1);
-	BarChartAnimate bca2 = readFile(fileName2);
-	bool found1 = bca1.animateFoundedFarms(cout, range, bca1.getSize(), frameToSearch);
-	bool found2 = bca2.animateFoundedFarms(cout, range, bca2.getSize(), frameToSearch);
-
-	if (found1 && found2)
-	{
-		cout << WHITE << "Frame #1(From File '" << fileName1 << "): \n" << endl;
-		bca1.animateFoundedFarms(cout, range, bca1.getSize(), frameToSearch);
-		cout << WHITE << "\n*********************************************"
-						 "*********************************************\n"
-			 << endl;
-		cout << "Frame #1(From File '" << fileName2 << "): \n" << endl;
-		bca2.animateFoundedFarms(cout, range, bca2.getSize(), frameToSearch);
-	}
-	else
-		cout << "*** NOT FOUND ***" << endl;
-	*/
 	return 0;
 }
