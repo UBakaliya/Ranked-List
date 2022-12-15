@@ -16,4 +16,5 @@ After downloading the application, identify the place where it was downloaded to
 Call ```make run``` on your console to start the program. Enjoy 😉.
 
 - Here is a gif showing the application in use:
+
 ![Drag Racing](/img/barchartAnimationDark.gif)
